@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>bealach - list</title>
+    </head>
+    <body>
+        <h1>List of all cols and passes in scotland</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Lat</th>
+                <th>Long</th>
+                <th>Region</th>
+            </tr>
+            {% for point in points %}
+            <tr>
+                <td>{{ point[0] }}</td>
+                <td>{{ point[1] }}</td>
+                <td>{{ point[2] }}</td>
+                <td>{{ point[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
