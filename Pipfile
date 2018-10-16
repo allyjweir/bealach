@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 "psycopg2" = "*"
+flask = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+bealach = 'flask run'

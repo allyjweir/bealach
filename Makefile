@@ -2,4 +2,4 @@ dev-install:
 	bash bin/init.sh
 
 dev-run:
-	echo "Coming soon"
+	FLASK_APP=bealach/app.py FLASK_ENV=development pipenv run bealach
